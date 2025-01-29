@@ -18,8 +18,8 @@ def is_enabled(value, default):
 # Bot Information Configuration
 # ============================
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '10660564'))
+API_HASH = environ.get('API_HASH', '527e6297989f4e7cda5091f5bf41d0e4')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # ============================
@@ -28,33 +28,33 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/56b5deb73f3b132e2bb73.jpg https://graph.org/file/5303692652d91d52180c2.jpg https://graph.org/file/425b6f46efc7c6d64105f.jpg https://graph.org/file/876867e761c6c7a29855b.jpg')).split()  # Sample pic
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/60e8a622b14796e4448ce.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/242b7f1b52743938d81f1.jpg'))
-CODE = (environ.get('CODE', 'https://graph.org/file/e419f801841c2ee3db0fc.jpg'))
-FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c3d8.jpg https://graph.org/file/56b5deb73f3b132e2bb73.jpg')).split()  # Fsub pic
+PICS = (environ.get('PICS', 'https://unitedcamps.in/Images/IMG_1738158450.jpg')).split()  # Sample pic
+NOR_IMG = environ.get("NOR_IMG", "https://unitedcamps.in/Images/IMG_1738158450.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://unitedcamps.in/Images/IMG_1738158450.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://unitedcamps.in/Images/IMG_1738158450.jpg")
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://unitedcamps.in/Images/IMG_1738158450.jpg'))
+CODE = (environ.get('CODE', 'https://unitedcamps.in/Images/IMG_1738158450.jpg'))
+FSUB_PICS = (environ.get('FSUB_PICS', 'https://unitedcamps.in/Images/IMG_1738158450.jpg')).split()  # Fsub pic
 
 # ============================
 # Admin, Channels & Users Configuration
 # ============================
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6946199216').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001881877723').split()]  # Channel id for auto indexing (make sure bot is admin)
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001970548842'))  # Log channel id (make sure bot is admin)
-DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002129955308'))  # Notification of those who verify will be sent to your channel
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001970548842'))  # Premium logs channel id
-auth_channel = environ.get('AUTH_CHANNEL', '')  # Channel/Group ID for force sub (make sure bot is admin)
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5552521515').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002423016096').split()]  # Channel id for auto indexing (make sure bot is admin)
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002313159346'))  # Log channel id (make sure bot is admin)
+DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002355597109'))  # Notification of those who verify will be sent to your channel
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', ''))  # Premium logs channel id
+auth_channel = environ.get('AUTH_CHANNEL', '-1002430885737')  # Channel/Group ID for force sub (make sure bot is admin)
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002313159346').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '')  # Request channel id (make sure bot is admin)
-AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002146212748 ').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('AUTH_CHANNEL', '-1002129955308 -1002095627297').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002430885737').split()]
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('AUTH_CHANNEL', '-1002430885737').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Koi:Lok@cluster0.bt8r7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
@@ -62,17 +62,17 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
 # ============================
 # Movie Notification & Update Settings
 # ============================
-DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', True))  # Notification On (True) / Off (False)
-DEENDAYAL_IMAGE_FETCH = bool(environ.get('DEENDAYAL_IMAGE_FETCH', True))  # On (True) / Off (False)
+DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', False))  # Notification On (True) / Off (False)
+DEENDAYAL_IMAGE_FETCH = bool(environ.get('DEENDAYAL_IMAGE_FETCH', False))  # On (True) / Off (False)
 CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla", "Telugu", "Malayalam", "Kannada", "Marathi", "Punjabi", "Bengoli", "Gujrati", "Korean", "Gujarati", "Spanish", "French", "German", "Chinese", "Arabic", "Portuguese", "Russian", "Japanese", "Odia", "Assamese", "Urdu"]
 
 # ============================
 # Verification Settings
 # ============================
-VERIFY = bool(environ.get('VERIFY', False))  # Verification On (True) / Off (False)
-DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', 24))  # Add time in hours
-DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002370988072'))  # Log channel id (make sure bot is admin)
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/dreamcinezone')  # How to open tutorial link for verification
+VERIFY = bool(environ.get('VERIFY', True))  # Verification On (True) / Off (False)
+DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', 3))  # Add time in hours
+DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002355597109'))  # Log channel id (make sure bot is admin)
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/How_To_Open_Links_Instant/2')  # How to open tutorial link for verification
 
 # ============================
 # Link Shortener Configuration
